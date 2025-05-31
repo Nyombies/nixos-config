@@ -1,0 +1,29 @@
+# Ignore nix build results
+/result
+/result-*
+
+# Ignore nix intermediate files
+*.drv
+*.out
+*.o
+*.gcno
+*.gcda
+*.gcov
+.cache/
+nix-shell-environment
+.nix-channels
+
+# Ignore Home Manager generations
+home-manager-generation*
+
+# Ignore editor temp files
+*.swp
+*.bak
+*.tmp
+*.log
+
+# Ignore VSCode settings (if used)
+.vscode/
+
+# Ignore systemd logs
+*.journal
