@@ -137,6 +137,9 @@ os = {
   # Bash
   programs.bash = {
     enable = true;
+    shellAliases = {
+     nixrebuild = "sudo nixos-rebuild switch --flake ~/nixos-config#nyombies";
+  };
     initExtra = ''
       eval "$(starship init bash)"
     '';
