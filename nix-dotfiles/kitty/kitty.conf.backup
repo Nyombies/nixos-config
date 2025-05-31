@@ -1,0 +1,68 @@
+#Disable close window confirmation message
+confirm_os_window_close 0
+
+# Font
+font_family      FiraCode Nerd Font
+bold_font        auto
+italic_font      auto
+font_size        11.0
+
+# Window look
+background_opacity 0.95
+confirm_os_window_close 0
+hide_window_decorations yes
+enabled_layouts tall
+
+# ThinkPad Terminal Colours
+foreground #E0E0E0
+background #0A0A0A
+cursor     #FF3B3B
+
+# Selection
+selection_foreground  #0F0F0F
+selection_background  #FF5555
+
+# Black (background base)
+color0  #0A0A0A
+# Red (main ThinkPad accent)
+color1  #FF3B3B
+# Dark grey
+color2  #3B3B3B
+# Muted red-orange
+color3  #FF5555
+# Mid grey
+color4  #555555
+# Deep red
+color5  #B40000
+# Accent red (replaces cyan)
+color6  #A60000
+# Light grey
+color7  #BBBBBB
+
+# Bright black
+color8  #333333
+# Bright red
+color9  #FF3B3B
+# Bright green (optional, or change to another grey)
+color10 #3EFF6A
+# Bright grey (replaces yellow)
+color11 #888888
+# Desaturated blue-grey (replaces bright blue)
+color12 #6C6C6C
+# Muted magenta-grey
+color13 #804040
+# Light warm grey (replaces bright cyan)
+color14 #999999
+# Bright white
+color15 #FFFFFF
+
+# Tab bar (disabled for minimalism)
+tab_bar_edge top
+tab_bar_style powerline
+tab_powerline_style slanted
+tab_bar_background #111111
+active_tab_background #FF5555
+active_tab_foreground #0F0F0F
+inactive_tab_background #1C1C1C
+inactive_tab_foreground #888888
+

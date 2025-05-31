@@ -1,0 +1,44 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  color: #d0d0d0;
+  background-color: rgba(10, 10, 10, 0.95);
+  border: none;
+}
+
+#window {
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff2a2a; /* ThinkPad red */
+  background-color: rgba(10, 10, 10, 0.95);
+}
+
+#input {
+  margin: 10px;
+  padding: 8px;
+  border: 2px solid #ff2a2a;
+  border-radius: 6px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#entry {
+  padding: 6px 10px;
+  margin: 2px 10px;
+  border-radius: 6px;
+}
+
+#entry:selected {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+#scroll {
+  margin: 5px 0;
+}
+
+#entry:hover {
+  background-color: #1a1a1a;
+  color: #ff2a2a;
+  transition: background-color 100ms ease-in-out;
+}
