@@ -1,0 +1,59 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "custom/temps",
+    "cpu",
+    "memory",
+    "battery",
+    "wireplumber",
+    "tray"
+  ],
+
+  "hyprland/workspaces": {
+    "on-click": "activate"
+  },
+
+  "clock": {
+    "format": "{:%a %d %b  %H:%M}"
+  },
+
+  "cpu": {
+    "format": "󰍛 {usage}%"
+  },
+
+  "memory": {
+    "format": " {used} MB"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": false,
+    "hide-if-full": true
+  },
+
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-icons": {
+      "muted": "󰝟",
+      "low": "",
+      "medium": "",
+      "high": ""
+    },
+    "on-click": "pavucontrol"
+  },
+
+"custom/temps": {
+  "format": "󰔏 {}°C",
+  "exec": "sensors | awk '/Package id 0:/ {gsub(/\\+|°C/, \"\", $4); temp=int($4); class=(temp >= 80 ? \"hot\" : temp >= 70 ? \"warm\" : \"\"); printf \"{\\\"text\\\": \\\"%d\\\", \\\"class\\\": \\\"%s\\\"}\\n\", temp, class}'",
+  "interval": 5,
+  "return-type": "json"
+},
+
+  "tray": {
+    "icon-size": 16
+  }
+}
