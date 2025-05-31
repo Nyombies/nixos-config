@@ -15,14 +15,14 @@
       nixosConfigurations.nyombies = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/nyombies.nix
+          ./hosts/nyombies-system.nix
 
           home-manager.nixosModules.home-manager
 {
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   home-manager.backupFileExtension = "backup";
-  home-manager.users.nyombies = import ./home/nyombies.nix;
+  home-manager.users.nyombies = import ./home/nyombies-home.nix;
 }
         ];
       };
